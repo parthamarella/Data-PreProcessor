@@ -33,14 +33,32 @@ while flag:
             print("3.Showing the dataset\n")
             print(df.head())
         elif subUserInput==-1:
-            print("CHECK")
             print("Going back the menu\n")
             continue
         else:
             print("Enter a valid input\n")
     ######Handing Option 2 (Handling NULL values)
     elif userInput==2:
-        print("Option 2 selected")
+        print("1.Show number of Null values:\n")
+        print("2.Remove columns\n")
+        print("3.Fill NULL values with Mean\n")
+        print("4.Fill NULL values with Median\n")
+        print("5.Fill NULL values with Mode\n")
+        print("6.Show the dataset\n")
+        subUserInput=int(input("What do you want to do? (Press -1 to go back)"))
+        if subUserInput==1:
+        elif subUserInput==2:
+        elif subUserInput==3:
+        elif subUserInput==4:
+        elif subUserInput==5:
+        elif subUserInput==6:
+            print("Showing Dataset")
+            print(df.head())
+        elif subUserInput==-1:
+            print("Going back the menu\n")
+            continue
+        else:
+            print()
     elif userInput==3:
         print("Option 3 selected")
     elif userInput==4:
