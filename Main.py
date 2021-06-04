@@ -46,19 +46,8 @@ while flag:
         print("5.Fill NULL values with Mode\n")
         print("6.Show the dataset\n")
         subUserInput=int(input("What do you want to do? (Press -1 to go back)"))
-        if subUserInput==1:
-        elif subUserInput==2:
-        elif subUserInput==3:
-        elif subUserInput==4:
-        elif subUserInput==5:
-        elif subUserInput==6:
-            print("Showing Dataset")
-            print(df.head())
-        elif subUserInput==-1:
-            print("Going back the menu\n")
-            continue
-        else:
-            print()
+
+        
     elif userInput==3:
         print("Option 3 selected")
     elif userInput==4:
