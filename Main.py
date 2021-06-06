@@ -39,15 +39,22 @@ while flag:
             print("Enter a valid input\n")
     ######Handing Option 2 (Handling NULL values)
     elif userInput==2:
-        print("1.Show number of Null values:\n")
+        print("1.Show number of NULL values\n")
         print("2.Remove columns\n")
         print("3.Fill NULL values with Mean\n")
         print("4.Fill NULL values with Median\n")
         print("5.Fill NULL values with Mode\n")
         print("6.Show the dataset\n")
         subUserInput=int(input("What do you want to do? (Press -1 to go back)"))
-
-        
+        if subUserInput==1:
+            print("Showing total NULL values in the dataset:\n")
+            print(df.isna().sum())
+        elif subUserInput==2:
+            print("Removing column:\n")
+            columnNumber=int(input("Enter column number you want to delete"))
+            print("You have SUCCESSFULLY dropped column:",df.columns[columnNumber])
+            newdf=df.drop(df.columns[columnNumber], axis = 1)
+            print(newdf)
     elif userInput==3:
         print("Option 3 selected")
     elif userInput==4:
